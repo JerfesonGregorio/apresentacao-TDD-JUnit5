@@ -9,31 +9,29 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class ContadorTest {
 
-    private Contador contador;
-
     @BeforeAll
     static void setupAll() {
-        System.out.println("Iniciando os testes da classe Contador");
+        System.out.println("Executando antes de todos os testes");
     }
 
     @AfterAll
     static void tearDownAll() {
-        System.out.println("Finalizando os testes da classe Contador");
+        System.out.println("Executando depois de todos os testes");
     }
 
     @BeforeEach
     void setup() {
-        System.out.println("Inicializando um novo contador");
-        contador = new Contador(5);
+        System.out.println("Executando antes de cada teste");
     }
 
     @AfterEach
     void tearDown() {
-        System.out.println("Finalizando um teste do contador");
+        System.out.println("Executando depois de cada teste");
     }
 
     @Test
     void iniciarComValorPositivo() {
+        Contador contador = new Contador(5);
         assertEquals(5, contador.getValor());
     }
 
@@ -44,12 +42,14 @@ public class ContadorTest {
 
     @Test
     void incrementarValor() {
+        Contador contador = new Contador(5);
         contador.incrementar();
         assertEquals(6, contador.getValor());
     }
 
     @Test
     void decrementarValor() {
+        Contador contador = new Contador(5);
         contador.decrementar();
         assertEquals(4, contador.getValor());
     }
@@ -62,15 +62,15 @@ public class ContadorTest {
 
     @Test
     void zerarValor() {
+        Contador contador = new Contador(5);
         contador.zerar();
         assertEquals(0, contador.getValor());
     }
 
     @ParameterizedTest
-    @ValueSource(ints = { 1, 5, 10})
+    @ValueSource(ints = { 1, 5, 10 })
     void iniciarComValoresDiversos(int valorInicial) {
         Contador contadorParametrizado = new Contador(valorInicial);
         assertEquals(valorInicial, contadorParametrizado.getValor());
-
     }
 }
