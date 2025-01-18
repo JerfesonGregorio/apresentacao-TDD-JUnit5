@@ -4,7 +4,7 @@ O Desenvolvimento Orientado a Testes (TDD) é uma metodologia de desenvolvimento
 ## O processo do TDD é conhecido como "Red-Green-Refactor":
 
 
-<img src="https://sofy.ai/wp-content/uploads/2024/07/Test-Driven-Development-Process.png" width="300" height="200">
+<img src="https://sofy.ai/wp-content/uploads/2024/07/Test-Driven-Development-Process.png" width="400" height="300">
 
 **Fonte:** https://sofy.ai/blog/what-is-test-driven-development/
 
@@ -25,7 +25,7 @@ O foco inicial do TDD está em testes unitários, que validam a funcionalidade d
 | Envolve refatoração contínua do código durante a execução de todos os testes.                    | Envolve testes após a conclusão do processo de desenvolvimento.                 |
 **Fonte:** https://testsigma.com/blog/test-driven-development-testsigma/
 
-## JUnit <img src="https://junit.org/junit5/assets/img/junit5-logo.png" width="20" height="20">
+## JUnit <img src="https://junit.org/junit5/assets/img/junit5-logo.png" width="25" height="25">
 O JUnit é um framework de teste unitário para Java que permite isolar e validar pequenos módulos de código. Ele suporta a execução de múltiplos testes em sequência, fornece relatórios detalhados sobre sucessos e falhas, e facilita a configuração e limpeza do ambiente de execução antes e depois de cada teste. Isso torna o processo mais eficiente e organizado, ajudando os desenvolvedores a identificar e corrigir problemas rapidamente.
 
 ### @Annotations
