@@ -1,5 +1,5 @@
 # Resumo Teórico
-O Desenvolvimento Orientado a Testes (TDD) é uma metodologia de desenvolvimento de software popularizada por Kent Beck em 2003. Ele baseia-se em começar o desenvolvimento pela escrita de testes, antes mesmo de implementar o código, incentivando uma definição clara dos requisitos e do comportamento esperado do software. Isso assegura maior qualidade, promove um design de código mais limpo e sustentável e melhora a compreensão dos requisitos.
+O Desenvolvimento Orientado a Testes (TDD) é uma metodologia de desenvolvimento de software descoberta por Kent Beck em 2003. Ele baseia-se em começar o desenvolvimento pela escrita de testes, antes mesmo de implementar o código, incentivando uma definição clara dos requisitos e do comportamento esperado do software. Isso assegura maior qualidade, promove um design de código mais limpo e sustentável e melhora a compreensão dos requisitos.
 
 ## O processo do TDD é conhecido como "Red-Green-Refactor":
 
