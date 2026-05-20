@@ -1,0 +1,21 @@
+name: Unit Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  unit-tests:
+    name: Run unit tests
+    runs-on: ubuntu-latest
+
+    container:
+      image: maven:3.9-eclipse-temurin-21-alpine
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run unit tests
+        run: mvn test
