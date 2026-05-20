@@ -7,7 +7,7 @@ on:
 
 jobs:
   unit-tests:
-    name: Run unit tests
+    name: unit-tests
     runs-on: ubuntu-latest
 
     container:
@@ -16,6 +16,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Cache Maven dependencies
+        uses: actions/cache@v4
+        with:
+          path: /root/.m2/repository
+          key: maven-${{ runner.os }}-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            maven-${{ runner.os }}-
 
       - name: Run unit tests
         run: mvn test
