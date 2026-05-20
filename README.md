@@ -66,6 +66,8 @@ O JUnit utiliza métodos estáticos para verificar condições nos testes.
 
 TDD promove um desenvolvimento mais disciplinado e focado na qualidade desde o início, com uma abordagem iterativa que melhora tanto o design quanto a manutenção do código. Testes após o desenvolvimento focam na verificação do código já existente, o que pode levar a mais retrabalho e a um ciclo de feedback mais longo, impactando potencialmente a eficiência e a qualidade geral do software.
 
+> Testando em pipeline
+
 # Fontes
 
 https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533  
